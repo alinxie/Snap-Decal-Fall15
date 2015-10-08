@@ -2018,7 +2018,9 @@ Process.prototype.reportProduct = function (a, b) {
 Process.prototype.reportQuotient = function (a, b) {
     return +a / +b;
 };
-
+Process.prototype.reportFloorDiv = function (a, b) {
+    return Math.floor(+a / +b);
+};
 Process.prototype.reportModulus = function (a, b) {
     var x = +a,
         y = +b;
